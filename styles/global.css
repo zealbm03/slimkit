@@ -1,0 +1,84 @@
+@font-face {
+    font-family: "Roboto";
+    src: url('../fonts/Roboto-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+@font-face {
+    font-family: "Roboto";
+    src: url('../fonts/Roboto-Medium.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url('../fonts/Roboto-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+:root {
+    /* COLORS */
+    --primary: #3e65ef;
+    --primary-gradient: linear-gradient(270deg,#4b64ff,#3031b9);
+    --secondary: #ffd400;
+    --text: #808080;
+    --bg: #f6f8fa;
+    --light-gray: #e4e9f9;
+    --black: #1A1A1A;
+
+    /* TEXTS */
+    --title: 27px;
+    --subtitle: 24px;
+    --card-title: 17px;
+    --card-subtitle: 13px;
+    --text-small: 11px;
+
+    /* GRID */
+    --grid: 428px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background: #fff;
+    color: var(--text);
+    font-family: 'Roboto';
+}
+
+h1, h2, h3 {color: var(--black);}
+
+.app {
+    max-width: var(--grid);
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+    animation: appear 1s;
+}
+
+#header {
+    max-width: 490px;
+    margin: 16px auto;
+    padding: 16px;
+}
+
+.social-image {
+    width: 100%;
+}
+
+/* KEYFRAMES ------------------- */
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    } 100% {
+        opacity: 1;
+    }
+}

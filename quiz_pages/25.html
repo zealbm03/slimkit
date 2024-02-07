@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caminhada e Rastreador para Perda de Peso</title>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/components.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<style>
+    #relatePhrase {
+        margin-top: 46px;
+        font-size: 21px;
+        line-height: 29px;
+        max-width: 295px;
+        text-align: center;
+        color: var(--black);
+    }
+
+    .tip {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 16px;
+        align-items: center;
+        color: var(--black);
+    }
+    
+    @keyframes progress {
+        0% {
+            width: 69.2364%;
+        }
+        100% {
+            width: 72.1775%;
+        }
+    }  
+    
+</style>
+<body>
+    <header id="header">
+        <div class="progress-bar">
+            <img src="../assets/back.430ab818.svg" id="prevPageBtn" class="btnBar">
+            <div class="bar">
+                <div class="barCheckpoints">
+                    <div class="ball active"></div>
+                    <div class="ball active"></div>
+                    <div class="ball active"></div>
+                    <div class="ball"></div>
+                    <div class="ball"></div>
+                </div>
+                <div class="barLine">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <img src="../assets/next.01c3ad3f.svg" id="nextPageBtn" class="btnBar">
+        </div>
+    </header>
+    <div class="app">
+        <h1 class="title">Você se identifica com a seguinte afirmação?</h1>
+        <div class="relate">
+            <div class="relateTo">
+                <p id="relatePhrase">"É possível <span id="span">perder pesso</span> com exercícios de caminhada"</p>
+            </div>
+            <div class="relateToButton">
+                <a href="26.html" id="relateBtn">1</a>
+                <a href="26.html"  id="relateBtn">2</a>
+                <a href="26.html"  id="relateBtn">3</a>
+                <a href="26.html"  id="relateBtn">4</a>
+                <a href="26.html"  id="relateBtn">5</a>
+            </div>
+            <div class="tip">
+                <p>Não muito</p>
+                <p>Totalmente</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../scripts/main.js"></script>
+</body>
+</html>

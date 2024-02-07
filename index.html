@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caminhada e Rastreador para Perda de Peso</title>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/components.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<style>
+
+    .app {
+        max-width: 700px;
+    }
+
+    #arrowMove {
+        margin: 36px 0;
+        width: 36px;
+    }
+
+    .cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .card-option {
+        padding: 0 64px;
+        text-align: center;
+    }
+
+    .card-title {
+        font-size: 22px
+    }
+
+    @media screen and (max-width: 400px) {
+        .cards {
+            flex-direction: column;
+            gap: 0.2rem;
+        }
+        #subtitleT {
+            font-size: 15px;
+        }
+        #titleT {
+            font-size: 20px;
+        }
+
+        .card-option {
+        padding: 0 56px;
+        text-align: center;
+    }
+    }
+</style>
+<body>
+    <div id="home">
+        <div class="app">
+            <header>
+                <img src="./assets/logo.580da3e5.png" id="logo">
+            </header>
+
+            <main>
+                <h2 id="subtitleT" style="color: #fff;">Tenha uma nova versão em 16 semanas</h2>
+                <h1 id="titleT" style="color: #fff;margin: 16px 0 32px 0;">Encontre o que você pode alcançar com nosso aplicativo de caminhada</h1>
+                
+                <img src="./assets/arrow.29590d81.svg" id="arrowMove">
+
+                <div class="cards">
+
+                    <a href="./quiz_pages/1.html" class="card-option">
+                        <div class="objective">
+                            <h1 class="card-title">Melhorar a minha saúde</h1>
+                        </div>
+                    </a>
+
+
+                    <a href="./quiz_pages/1.html" class="card-option active">
+                        <div class="objective">
+                            <h1 class="card-title">Perder peso para a vida</h1>
+                        </div>
+                    </a>
+                </div>
+            </main>
+
+            <footer>
+                <p class="text">Os resultados variam dependendo do seu ponto de partida, objetivos e esforço</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

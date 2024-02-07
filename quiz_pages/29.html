@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caminhada e Rastreador para Perda de Peso</title>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/components.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<style>
+    @keyframes progress {
+            0% {
+                width: 81.0008%;
+            }
+            100% {
+                width:83.9419%;
+            }
+        }  
+</style>
+<body>
+    <header id="header">
+        <div class="progress-bar">
+            <img src="../assets/back.430ab818.svg" id="prevPageBtn" class="btnBar">
+            <div class="bar">
+                <div class="barCheckpoints">
+                    <div class="ball active"></div>
+                    <div class="ball active"></div>
+                    <div class="ball active"></div>
+                    <div class="ball active"></div>
+                    <div class="ball"></div>
+                </div>
+                <div class="barLine">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <img src="../assets/next.01c3ad3f.svg" id="nextPageBtn" class="btnBar">
+        </div>
+    </header>
+    <div class="app">
+        <h1 class="title">Alguma das seguintes opções se aplicam a você?</h1>
+        <div class="cards">
+            <a class="card-option icon" href="30.html">
+                <div class="card-icon">
+                    <img src="../assets/a1.3b0f04ad.png" id="card-icon-img">
+                </div>
+                <div class="card-content">
+                    <h1 class="card-title">Tenho diabetes</h1>
+                </div>
+            </a>
+
+            <a class="card-option icon" href="30.html">
+                <div class="card-icon">
+                    <img src="../assets/a2.a68ace8e.png" id="card-icon-img">
+                </div>
+                <div class="card-content">
+                    <h1 class="card-title">Tenho asma</h1>
+                </div>
+            </a>
+
+            <a class="card-option icon" href="30.html">
+                <div class="card-icon">
+                    <img src="../assets/a3.0e14b1ff.png" id="card-icon-img">
+                </div>
+                <div class="card-content">
+                    <h1 class="card-title">Tenho doenças nas articulações</h1>
+                </div>
+            </a>
+
+            <a class="card-option icon" href="30.html">
+                <div class="card-icon">
+                    <img src="../assets/a4.90cf30d8.png" id="card-icon-img">
+                </div>
+                <div class="card-content">
+                    <h1 class="card-title">Nenhum acima</h1>
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+    <script src="../scripts/main.js"></script>
+</body>
+</html>

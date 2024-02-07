@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caminhada e Rastreador para Perda de Peso</title>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/components.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<style>
+    .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .app {
+        height: min-content;
+        text-align: center;
+    }
+
+    @keyframes progress {
+            0% {
+                width: 93%;
+            }
+            100% {
+                width:100%;
+            }
+        }  
+</style>
+<body>
+    <div class="container">
+        <div class="app">
+            <video autoplay playinside loop preload="auto">
+                <source src="../assets/animation.326e9fb7.mp4" type="video/mp4">
+            </video>
+            <h1 class="title">Escolhendo a rotina de exercícios perfeito para você...</h1>
+    </div>
+    <script>
+        let title = document.querySelector('.title');
+        setTimeout(function() {
+            title.innerHTML = "Procurando pelo melhor plano..."
+        }, 5000);
+
+        setTimeout(function() {
+            title.innerHTML = "Calculando a quantidade de água necessária..."
+        }, 10000);
+
+        setTimeout(function() {
+            location.href = "checkout_page.html";
+        }, 15000);
+    </script>
+    <script src="../scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caminhada e Rastreador para Perda de Peso</title>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/components.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<style>
+    #nextPage.goalKgBtn {
+        color: #fff;
+        font-weight: 700;
+        padding: 8px 0;
+        font-size: 22px;
+        margin-bottom: 48px;
+    }
+
+    .app {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    @keyframes progress {
+        0% {
+            width: 43.2165%;
+        }
+        100% {
+            width: 46.1576%;
+        }
+    }  
+
+</style>
+<body>
+    <header id="header">
+        <div class="progress-bar">
+            <img src="../assets/back.430ab818.svg" id="prevPageBtn" class="btnBar">
+            <div class="bar">
+                <div class="barCheckpoints">
+                    <div class="ball active"></div>
+                    <div class="ball active"></div>
+                    <div class="ball"></div>
+                    <div class="ball"></div>
+                    <div class="ball"></div>
+                </div>
+                <div class="barLine">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <img src="../assets/next.01c3ad3f.svg" id="nextPageBtn" class="btnBar">
+        </div>
+    </header>
+    <div class="app">
+        <h1 class="title">Seu peso dos sonhos</h1>
+        <button id="nextPage" class="goalKgBtn">KG</button>
+        <div class="input-wrapper">
+            <input 
+                type="number"
+                name="goalweight" 
+                class="inputNumber"
+                id="goalweight" 
+                onKeyDown="if(this.value.length==3 && event.keyCode!=8) return false;"
+            >
+            <span class="suffix">kg</span>
+        </div>
+    </div>
+
+    <div class="button-wrapper">
+        <a href="17.html" id="nextPage" class="goalWeightBtn">Continuar</a>
+    </div>
+
+
+    <script>
+        function updateButtonState() {
+            let goalWeightBtn = document.querySelector('.goalWeightBtn');
+            let weight = document.querySelector('#goalweight');
+            if (weight.value.trim() !== '') {
+                goalWeightBtn.classList.remove('disabled');
+                goalWeightBtn.addEventListener('click', () => {
+                    localStorage.setItem('pesoIdeal', goalWeight);
+                });
+            } else {
+                goalWeightBtn.classList.add('disabled');
+            }
+        }
+        document.querySelector('#goalweight').addEventListener('input', updateButtonState);
+        updateButtonState();
+    </script>
+    <script src="../scripts/main.js"></script>
+</body>
+</html>

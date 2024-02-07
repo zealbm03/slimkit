@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caminhada e Rastreador para Perda de Peso</title>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/components.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<style>
+    @keyframes progress {
+        0% {
+            width: 23.5288%;
+        }
+        100% {
+            width: 26.4699%;
+        }
+    }   
+</style>
+<body>
+    <header id="header">
+        <div class="progress-bar">
+            <img src="../assets/back.430ab818.svg" id="prevPageBtn" class="btnBar">
+            <div class="bar">
+                <div class="barCheckpoints">
+                    <div class="ball active"></div>
+                    <div class="ball active"></div>
+                    <div class="ball"></div>
+                    <div class="ball"></div>
+                    <div class="ball"></div>
+                </div>
+                <div class="barLine">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <img src="../assets/next.01c3ad3f.svg" id="nextPageBtn" class="btnBar">
+        </div>
+    </header>
+    <div class="app">
+        <h1 class="title">O quão ativo é seu trabalho?</h1>
+        <div class="cards">
+            <a class="card-option icon" href="10.html">
+                <div class="card-icon">
+                    <img src="../assets/jd1.4e7c223f.png" id="card-icon-img">
+                </div>
+                <div class="card-content">
+                    <h1 class="card-title">Sedentário</h1>
+                </div>
+            </a>
+            <a class="card-option icon" href="10.html">
+                <div class="card-icon">
+                    <img src="../assets/jd2.82d660fa.png" id="card-icon-img">
+                </div>
+                <div class="card-content">
+                    <h1 class="card-title">Moderadamente ativo</h1>
+                </div>
+            </a>
+            <a class="card-option icon" href="10.html">
+                <div class="card-icon">
+                    <img src="../assets/jd3.7beaf97e.png" id="card-icon-img">
+                </div>
+                <div class="card-content">
+                    <h1 class="card-title">Muito ativo</h1>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <script src="../scripts/main.js"></script>
+</body>
+</html>

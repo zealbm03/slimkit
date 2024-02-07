@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caminhada e Rastreador para Perda de Peso</title>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/components.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<style>
+    @keyframes progress {
+            0% {
+                width: 78.0597%;
+            }
+            100% {
+                width: 81.0008%;
+            }
+        }  
+</style>
+<body>
+    <header id="header">
+        <div class="progress-bar">
+            <img src="../assets/back.430ab818.svg" id="prevPageBtn" class="btnBar">
+            <div class="bar">
+                <div class="barCheckpoints">
+                    <div class="ball active"></div>
+                    <div class="ball active"></div>
+                    <div class="ball active"></div>
+                    <div class="ball active"></div>
+                    <div class="ball"></div>
+                </div>
+                <div class="barLine">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <img src="../assets/next.01c3ad3f.svg" id="nextPageBtn" class="btnBar">
+        </div>
+    </header>
+    <div class="app">
+        <h1 class="title">Seu programa de perca de peso em 3 meses</h1>
+        <p class="subtitle">Baseado nas suas respostas e objetivos pessoais, você consegue alcançar sua meta de peso de <span id="span">60kg em May 6</span></p>
+
+        <div class="comments">
+            <div class="testimonial">
+                <div class="perfil">
+                    <img src="../assets/reviewer-one.79dcd2a1.jpg">
+                    <p class="small-text">Sandra Britzke</p>
+                </div>
+                <div class="opinion">
+                    <div class="stars">
+                        <img src="../assets/stars.0b35279f.png" id="card-icon-img-3">
+                        <p class="small-text">4.5 / 5.0</p>
+                    </div>
+                    <p class="small-text" id="commentText">Este aplicativo está configurado perfeitamente. Ele envia lembretes para atualizá-lo sobre seu progresso. E você pode definir seu nível de condicionamento físico.</p>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <div class="perfil">
+                    <img src="../assets/reviewer-two.b8bbf671.jpg">
+                    <p class="small-text">Luciana Ribeiro</p>
+                </div>
+                <div class="opinion">
+                    <div class="stars">
+                        <img src="../assets/stars.0b35279f.png" id="card-icon-img-3">
+                        <p class="small-text">4.5 / 5.0</p>
+                    </div>
+                    <p class="small-text" id="commentText">Este aplicativo realmente me ajudou a perder peso e agora me sinto bem comigo mesmo. Eu uso meu aplicativo de caminhada três vezes ao dia. Caminhar também me ajuda a relaxar a mente.</p>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <div class="perfil">
+                    <img src="../assets/reviewer-three.b4691e24.jpg">
+                    <p class="small-text">Vicente Lima</p>
+                </div>
+                <div class="opinion">
+                    <div class="stars">
+                        <img src="../assets/stars.0b35279f.png" id="card-icon-img-3">
+                        <p class="small-text">4.5 / 5.0</p>
+                    </div>
+                    <p class="small-text" id="commentText">Adoro fazer uma boa caminhada com minha música. O aplicativo incentiva você a acelerar em intervalos e acompanha como estou indo. Este diabético de 53 anos precisa de toda a ajuda que conseguir.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="button-wrapper">
+        <a href="29.html" id="nextPage">Continuar</a>
+    </div>
+
+    <script>
+        const pesoIdeal  = parseInt(localStorage.getItem('pesoIdeal'));
+        const dataResultados  = localStorage.getItem('dataResultados');
+
+        document.querySelector('#span').innerHTML = pesoIdeal + " kg em " + dataResultados;
+        
+    </script>
+
+    <script src="../scripts/main.js"></script>
+</body>
+</html>

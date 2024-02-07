@@ -1,0 +1,181 @@
+#home {
+    background: url('../assets/bg_desktop.6aae5539.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    padding: 24px 0;
+}
+
+#home .app {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+}
+
+#home header {
+    text-align: center;
+}
+
+#home #logo {
+    border-radius: 8px;
+    width: 40px;
+}
+
+#span {
+    color: var(--primary);
+    font-weight: bold;
+}
+
+#runningText {
+    font-size: 17px;
+    color: #030303;
+}
+
+.info-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.chart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 140px;
+}
+
+.planChart {
+    position: relative;
+    width: 299px;
+    margin-top: 100px;
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 51px;
+    height: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    padding-bottom: 4px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: -.02em;
+    color: #fff;
+    position: absolute;
+}
+
+.chartLabel01, .chartLabel02 {
+    background: url('../assets/label-blue.d41b3fc9.svg');
+    background-repeat: no-repeat;
+}
+
+.chartLabel03, .chartLabel04 {
+    background: url('../assets/label-green.4dd504ed.svg');
+    background-repeat: no-repeat;
+    top: 18px;
+}
+
+.chartLabel01 {
+    top: -40px;
+    left: -18px;
+}
+
+.chartLabel02{
+    top: -10px;
+    left: 76px;
+}
+
+.chartLabel03 {
+    right: 77px;
+}
+
+.chartLabel04 {
+    right: -19px;
+}
+
+.checkout {
+    padding: 24px 0;
+}
+
+.timer-msg {
+    background: rgba(255,212,0,.05);
+    border: 2px solid #ffd400;
+    border-radius: 16px;
+    margin-top: 16px;
+    min-height: 121px;
+    padding: 13px;
+    width: 100%;  
+    margin-bottom: 16px;
+}
+
+.benefits {
+    margin: 50px 0 40px 0;
+    position: relative;
+}
+
+.benefits ul {
+    margin: 0 24px;
+}
+
+.benefits ul li::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    display: block;
+    background: var(--primary-gradient);
+    border-radius: 40px;
+    position: absolute;
+    left: 4px;
+    margin-top: 5px;
+}
+
+.benefits ul li {
+    font-size: 17px;
+    color: var(--black);
+    margin-bottom: 14px;
+}
+
+#headerCheckout {
+    background: url('../assets/bg.b04810bd.svg');
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 62px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    opacity: 0;
+    transition: all .5s;
+}
+
+#headerCheckout .app {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+#headerCheckout h2, #timer2 {
+    font-size: 19px;
+    color: #fff
+}
+
+#timer2 {
+    font-size: 32px;
+}
+
+a.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+  }

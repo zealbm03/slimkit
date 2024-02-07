@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caminhada e Rastreador para Perda de Peso</title>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/components.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<style>
+    #tMessage {
+        margin: 12px 0;
+        font-weight: 700;
+        color: var(--black);
+    }
+
+    #weigth {
+        color: var(--black);
+        text-align: center;
+        margin-top: 24px;
+        font-size: 17px;
+    }
+
+    .small {
+        font-size: var(--text-small);
+    }
+
+    #oldPrice {
+        margin-right: 6px;
+        text-decoration: line-through;
+    }
+</style>
+<body>
+
+    <header id="headerCheckout">
+        <div class="app">
+            <h2>Seu tempo vai expirar em:</h2>
+            <div class="time">
+                <h1 id="timer2"></h1>
+            </div>
+        </div>
+    </header>
+
+    <div class="app">
+        <div class="checkout">
+
+            <h1 class="title" style="text-align: center;">SEU PROGRAMA DE PERCA DE PESO EM 3 MESES</h1>
+            <p class="subtitle">O aplicativo de caminhada está aqui para ajudar você a atingir seu objetivo e perder <span id="finalWeight" style="font-weight: 700;color:var(--primary);">12kg</span></p>
+
+            <div class="timer-msg">
+                <p class="subtitle" style="font-size: 14px;">Seu plano pessoal está pronto. E vai expirar <br>em 9 minutos.</p>
+                <p id="tMessage">Tempo restante: <span id="timer1"></span></p>
+                <span style="opacity: 0.4;font-size: 12px;">Role para baixo para começar!</span>
+            </div>
+
+            <p class="subtitle">Baseado nas suas respostas e objetivos pessoais, você consegue atingir seu objetivo de</p>
+            <p id="weight" class="small"><strong>60kg seguindo o nosso plano</strong></p>
+            <div class="chart">
+                <div class="planChart">
+                    <div class="chartLabel01 label" id="actualWeight">72 kg</div>
+                    <div class="chartLabel02 label" id="duringWeight">66 kg</div>
+                    <div class="chartLabel03 label" id="finalWeight">60 kg</div>
+                    <div class="chartLabel04 label" id="finalWeight">60 kg</div>
+                    <div class="chartImage">
+                        <img src="../assets/chart1.e1beb302.svg">
+                    </div>
+                </div>
+            </div>
+
+            <div class="benefits">
+                <h1 class="title">Benefícios da caminhada</h1>
+                <ul>
+                    <li>Atingir seu objetivo de 60kg</li>
+                    <li>Suporte para sustentar seu sucesso</li>
+                    <li>Mais energia</li>
+                    <li>Melhor saúde</li>
+                    <li>Motivação pessoal</li>
+                    <li>Felicidade para você</li>
+                </ul>
+            </div>
+
+            <div class="plan">
+                <h1 class="title">Escolha seu plano</h1>
+            
+
+                <div class="plan-option activePlan">
+                    <div class="plan-info">
+                        <div id="priceCheckbox"></div>
+                        <div class="priceTest">
+                            <h3>PLANO DE 1 ANO</h3>
+                            <p class="small"><span id="oldPrice">R$ 49,90</span>R$ 30,00 por mês</p>
+                        </div>
+                    </div>
+                    <div class="plan-price">
+                        <div class="price-card">
+                            <p id="priceCurrency">R$</p>
+                            <h3 id="priceInteger">0</h3>
+                            <div class="price-wrapper">
+                                <h4 id="priceRemainder">19</h4>
+                                <p id="pricePeriod">p/ dia</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span style="opacity: 0.8;font-size: 12px;">Clicando no botão Adquirir meu Plano, você concorda com os Termos de Uso e Termos de Privacidade.</span>
+
+            <a href="#" id="checkoutBtn">Adquirir meu plano</a>
+
+            <div class="comments">
+                <h1 class="title">Depoimentos</h1>
+                <div class="testimonial">
+                    <div class="perfil">
+                        <img src="../assets/reviewer-one.79dcd2a1.jpg">
+                        <p class="small-text">Sandra Britzke</p>
+                    </div>
+                    <div class="opinion">
+                        <div class="stars">
+                            <img src="../assets/stars.0b35279f.png" id="card-icon-img-3">
+                            <p class="small-text">4.5 / 5.0</p>
+                        </div>
+                        <p class="small-text" id="commentText">Este aplicativo está configurado perfeitamente. Ele envia lembretes para atualizá-lo sobre seu progresso. E você pode definir seu nível de condicionamento físico.</p>
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="perfil">
+                        <img src="../assets/reviewer-two.b8bbf671.jpg">
+                        <p class="small-text">Luciana Ribeiro</p>
+                    </div>
+                    <div class="opinion">
+                        <div class="stars">
+                            <img src="../assets/stars.0b35279f.png" id="card-icon-img-3">
+                            <p class="small-text">4.5 / 5.0</p>
+                        </div>
+                        <p class="small-text" id="commentText">Este aplicativo realmente me ajudou a perder peso e agora me sinto bem comigo mesmo. Eu uso meu aplicativo de caminhada três vezes ao dia. Caminhar também me ajuda a relaxar a mente.</p>
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="perfil">
+                        <img src="../assets/reviewer-three.b4691e24.jpg">
+                        <p class="small-text">Vicente Lima</p>
+                    </div>
+                    <div class="opinion">
+                        <div class="stars">
+                            <img src="../assets/stars.0b35279f.png" id="card-icon-img-3">
+                            <p class="small-text">4.5 / 5.0</p>
+                        </div>
+                        <p class="small-text" id="commentText">Adoro fazer uma boa caminhada com minha música. O aplicativo incentiva você a acelerar em intervalos e acompanha como estou indo. Este diabético de 53 anos precisa de toda a ajuda que conseguir.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const pesoAtual  = parseInt(localStorage.getItem('peso'));
+        const pesoIdeal  = parseInt(localStorage.getItem('pesoIdeal'));
+        let pesoDurante = (pesoAtual + pesoIdeal) / 2;
+        
+        let actualWeight = document.querySelector('#actualWeight');
+        let duringWeight = document.querySelector('#duringWeight');
+        let finalWeight = document.querySelectorAll('#finalWeight');
+
+        actualWeight.innerHTML = pesoAtual + ' kg';
+        duringWeight.innerHTML = pesoDurante + ' kg';
+
+        finalWeight.forEach(label => {
+            label.innerHTML = pesoIdeal + ' kg';
+        });
+    </script>
+
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/checkout.js"></script>
+</body>
+</html>

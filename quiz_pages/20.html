@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caminhada e Rastreador para Perda de Peso</title>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/components.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<style>
+    @keyframes progress {
+        0% {
+            width: 54.5309%;
+        }
+        100% {
+            width: 57.472%;
+        }
+    }  
+</style>
+<body>
+    <header id="header">
+        <div class="progress-bar">
+            <img src="../assets/back.430ab818.svg" id="prevPageBtn" class="btnBar">
+            <div class="bar">
+                <div class="barCheckpoints">
+                    <div class="ball active"></div>
+                    <div class="ball active"></div>
+                    <div class="ball active"></div>
+                    <div class="ball"></div>
+                    <div class="ball"></div>
+                </div>
+                <div class="barLine">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <img src="../assets/next.01c3ad3f.svg" id="nextPageBtn" class="btnBar">
+        </div>
+    </header>
+    <div class="app">
+        <h1 class="title">Qual das opções descreve melhor seu estilo de vida?</h1>
+        <p>Às vezes pode ser difícil manter hábitos saudáveis. Nosso programa pessoal vai ajudar você a alcançar seus objetivos.</p>
+        <div class="cards">
+            <a class="card-option icon" href="21.html">
+                <div class="card-icon">
+                    <img src="../assets/ls1.b45d3428.png" id="card-icon-img">
+                </div>
+                <div class="card-content">
+                    <h1 class="card-title">Meu level de atividade não é bom e preciso melhorar</h1>
+                </div>
+            </a>
+            <a class="card-option icon" href="21.html">
+                <div class="card-icon">
+                    <img src="../assets/ls2.5e94db8b.png" id="card-icon-img">
+                </div>
+                <div class="card-content">
+                    <h1 class="card-title">Eu tento praticar hábitos saudáveis</h1>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <script src="../scripts/main.js"></script>
+</body>
+</html>
